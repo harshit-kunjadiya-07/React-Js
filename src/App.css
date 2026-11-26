@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-radius: 8px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #2563eb;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #4966c5;
+  transform: scale(1.1);
+}
+
+nav img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  color: #2563eb;
+  font-size: 26px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+li {
+  background-color: #322d2d;
+  color: #ffffff;
+  padding: 9px 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border-radius: 22px;
+  width: 230px;
+  padding: 11px 15px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  background-color: #f9fafb;
+  transition: 0.3s;
+}
+
+input:hover {
+  border-color: #000000;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+main {
+  width: 85%;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+main>img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+main>img:hover {
+  transform: scale(1.02);
+}
+
+section,
+aside {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+section:hover,
+aside:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #bfdbfe;
+}
+
+section h4,
+section h2,
+aside h3 {
+  color: #2563eb;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+section p,
+aside p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 22px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
